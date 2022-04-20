@@ -27,9 +27,6 @@ describe('plusOne', function (){
     it('should return 5 when passed 4', function () {
         expect(plusOne(4)).toBe(5)
     });
-    it('should return false when passed anything but a number', function () {
-        expect(plusOne(true)).toBe(false)
-    });
     it('should return 6 when passed 5', function () {
         expect(plusOne(5)).toBe(6)
     });
@@ -41,5 +38,8 @@ describe('plusOne', function (){
 describe('sayHello' , function (){
     it('should be a function ', function () {
         expect(typeof sayHello).toBe("function")
+    });
+    it('should return a string', function () {
+        expect(typeof sayHello()).toBe("string")
     });
 })
