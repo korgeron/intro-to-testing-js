@@ -70,3 +70,17 @@ describe('sayHello' , function (){
         expect(sayHello(["5"])).toBe("not a name")
     });
 })
+
+//isFive
+
+describe('isFive' , function (){
+    it('should define a function isFive', function () {
+        expect(typeof isFive).toBe("function")
+    });
+    it('should return a boolean no matter the input', function () {
+        expect(typeof isFive()).toBe("boolean")
+    });
+    it('should return true if passed the value 5', function () {
+        expect(isFive(5)).toBe(true)
+    });
+})
