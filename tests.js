@@ -51,4 +51,22 @@ describe('sayHello' , function (){
     it('should return "Hello, Pat!"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
+    it('should return "Hello, World!"', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if true', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" if false', function () {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
+    it('should return "not a name" if passed a number', function () {
+        expect(sayHello(4)).toBe("not a name")
+    });
+    it('should return not a name if passed "5" ', function () {
+        expect(sayHello("5")).toBe("not a name")
+    });
+    it('should return not a name if passed Array ', function () {
+        expect(sayHello(["5"])).toBe("not a name")
+    });
 })

@@ -3,8 +3,8 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-function plusOne(num){
-    if (typeof num === "number"){
+function plusOne(num) {
+    if (typeof num === "number") {
         return num + 1;
     } else {
         return 0;
@@ -12,6 +12,12 @@ function plusOne(num){
 
 }
 
-function sayHello(name){
+function sayHello(name) {
+    if (name === true || name === false || name === undefined) {
+        return "Hello, World!";
+    } else if (!isNaN(name)) {
+        return "not a name";
+    }
     return "Hello, " + name + "!";
 }
+
