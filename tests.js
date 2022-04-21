@@ -83,4 +83,53 @@ describe('isFive' , function (){
     it('should return true if passed the value 5', function () {
         expect(isFive(5)).toBe(true)
     });
+    it('should return false if "5" is passed into it ', function () {
+        expect(isFive("5")).not.toBe(true)
+    });
+})
+
+//isEven
+describe('isEven' , function (){
+    it('should define the function isEven', function () {
+        expect(typeof isEven).toBe("function")
+    });
+    it('should return a boolean value', function () {
+        expect(typeof isEven()).toBe("boolean")
+    });
+    it('should return false for booleans ', function () {
+        expect(isEven(false)).toBe(false)
+    });
+    it('should return false for 0', function () {
+        expect(isEven(0)).toBe(false)
+    });
+})
+
+//isVowel
+describe('isVowel' , function (){
+    it('should define a function isVowel', function () {
+        expect(typeof isVowel).toBe("function")
+    });
+    it('should return a boolean value', function () {
+        expect(typeof isVowel()).toBe("boolean")
+    });
+    it('should return true if passed with a', function () {
+        expect(isVowel('a')).toBe(true)
+    });
+    it('should return true if passed with e', function () {
+        expect(isVowel('e')).toBe(true)
+    });
+    it('should return false if passed with p', function () {
+        expect(isVowel('p')).toBe(false)
+    });
+})
+
+//add
+
+describe('add' , function (){
+    it('should define the function add ', function () {
+        expect(typeof add).toBe("function")
+    })
+    it('should return 5 if 2 and 3 are added into it', function () {
+        expect(add(2, 3)).toBe(5)
+    })
 })

@@ -22,5 +22,22 @@ function sayHello(name) {
 }
 
 function isFive(input){
-    return input = true;
+    return input === 5;
+
+}
+
+function isEven(input){
+ if (input === 0){
+     return false;
+ }
+    return parseFloat(input) % 2 === 0;
+}
+
+function isVowel (vow){
+    return vow === 'a' || vow === 'e' || vow === 'i' || vow === 'o' || vow === 'u' || vow === 'A' || vow === 'E' || vow === 'I' || vow === 'O' || vow === 'U';
+
+}
+
+function add(num1 , num2){
+    return num1 + num2;
 }
